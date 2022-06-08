@@ -9,20 +9,10 @@ import android.text.Html;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.kabouzeid.gramophone.R;
 import com.kabouzeid.gramophone.model.PlaylistSong;
-import com.kabouzeid.gramophone.model.Song;
 import com.kabouzeid.gramophone.util.PlaylistsUtil;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
-
-import java.util.EmptyStackException;
-
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
 
 /**
  * @author Karim Abou Zeid (kabouzeid)
@@ -36,28 +26,7 @@ public class RemoveFromPlaylistDialog extends DialogFragment {
         return create(list);
     }
 
-    private Song song;
 
-    class RemoveFromPlayListDialog throws Exception {
-
-        @BeforeEach
-
-        void setUp() {
-        }
-
-        @Test
-        void testaddSong() {
-            song = new Song();
-            assertEquals(0, song.add(song));
-        }
-
-        @Test
-        void testPushList() {
-            song = new Song();
-            song.push('list');
-            assertEquals('list', song.pop());
-        }
-    }
 
     @NonNull
     public static RemoveFromPlaylistDialog create(List<PlaylistSong> songs) {

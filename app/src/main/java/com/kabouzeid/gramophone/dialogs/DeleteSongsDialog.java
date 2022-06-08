@@ -14,16 +14,6 @@ import com.kabouzeid.gramophone.util.MusicUtil;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import java.util.EmptyStackException;
-
-import org.junit.Before;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-
 /**
  * @author Karim Abou Zeid (kabouzeid), Aidan Follestad (afollestad)
  */
@@ -34,28 +24,6 @@ public class DeleteSongsDialog extends DialogFragment {
         List<Song> list = new ArrayList<>();
         list.add(song);
         return create(list);
-    }
-    private Song song;
-
-    class DeleteSongDialog throws Exception {
-
-        @BeforeEach
-
-        void setUp() {
-        }
-
-        @Test
-        void testaddSong() {
-            song = new Song();
-            assertEquals(0, song.add(song));
-        }
-
-        @Test
-        void testPushList() {
-            song = new Song();
-            song.push('list');
-            assertEquals('list', song.pop());
-        }
     }
 
     @NonNull
