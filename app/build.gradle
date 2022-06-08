@@ -112,6 +112,11 @@ dependencies {
     }
 
     implementation 'com.jakewharton:butterknife:10.2.1'
+    implementation 'junit:junit:4.12'
+    implementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'org.junit.jupiter:junit-jupiter'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
 
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
@@ -126,4 +131,5 @@ dependencies {
     implementation 'org.eclipse.mylyn.github:org.eclipse.egit.github.core:2.1.5'
 
     implementation 'com.github.AdrienPoupa:jaudiotagger:2.2.3'
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.0.1")
 }
